@@ -58,6 +58,8 @@ pytest -q
 
 `schema.sql` documenta o DDL PostgreSQL gerado pela migration. Use Alembic para instalar o banco, não ambos. Testes verificam o ciclo CRUD, autorização, validação, acentos, escaping e paginação do PDF.
 
+O modelo de CI está em `.github/workflow-templates/ci.yml`, desativado porque a credencial de publicação não possui o escopo `workflow`. Para ativar, mova para `.github/workflows/ci.yml` usando uma credencial com essa permissão.
+
 ## Referências
 
 - [FastAPI e bancos SQL](https://fastapi.tiangolo.com/tutorial/sql-databases/)
